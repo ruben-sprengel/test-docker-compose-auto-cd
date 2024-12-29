@@ -1,0 +1,6 @@
+services:
+  grafana:
+    image: grafana/grafana-oss
+    restart: always
+    ports:
+      - 0.0.0.0:3000:3000
