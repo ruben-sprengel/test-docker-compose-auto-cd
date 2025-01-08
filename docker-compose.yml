@@ -3,4 +3,7 @@ services:
     image: grafana/grafana-oss:11.4.0-ubuntu
     restart: always
     ports:
-      - 0.0.0.0:3000:3000
+      - "3000:3000"
+    environment:
+      - APP_ENV=test
+      - APP_MODE=${APP_MODE}
